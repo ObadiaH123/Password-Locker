@@ -43,3 +43,15 @@ def delete_credentials(credentials):
     function that delete credentials from the credentials list
     """
     credentials.delete_credentials()
+
+def find_credentials(account):
+    """
+    function that find credentials from the credentials list by an account name 
+    """
+    return Credentials.find_by_number(account)
+
+def check_credentials(account):
+    """
+    function that check if a credential exists with that account name
+    """
+    return Credentials.credential_exist(account)
