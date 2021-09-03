@@ -24,3 +24,16 @@ def login_user(username,password):
     """
     checked_user = Credentials.verify_user(username,password)
     return checked_user
+
+def create_new_credential(account,username,password):
+    """
+    function that create a new credentials
+    """
+    new_credentials = Credentials(account,username,password)
+    return new_credential
+
+def save_credential(credential):
+    """
+    function that save credential
+    """
+    credential.save_credential()
