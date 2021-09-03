@@ -54,4 +54,4 @@ def check_credentials(account):
     """
     function that check if a credential exists with that account name
     """
-    return Credentials.credential_exist(account)
+    return Credentials.credentials_exist(account)
