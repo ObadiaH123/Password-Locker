@@ -20,3 +20,10 @@ class TestUser(unittest.TestCase):
         """
         self.assertEqual(self.new_user.username,"ObadiaH")
         self.assertEqual(self.new_user.password,"bett@123")
+
+    def test_save_user(self):
+        """
+        check if the new instance of the object has been created
+        """
+        self.new_user.save_user()
+        self.assertEqual(len(User.user_list),1)
