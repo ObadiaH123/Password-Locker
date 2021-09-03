@@ -32,8 +32,14 @@ def create_new_credential(account,username,password):
     new_credentials = Credentials(account,username,password)
     return new_credential
 
-def save_credential(credential):
+def save_credentials(credentials):
     """
-    function that save credential
+    function that add new credentials to the credentials list
     """
-    credential.save_credential()
+    credentials.save_user_credentials()
+
+def delete_credentials(credentials):
+    """
+    function that delete credentials from the credentials list
+    """
+    credentials.delete_credentials()
