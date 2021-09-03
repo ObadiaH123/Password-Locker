@@ -55,3 +55,10 @@ def check_credentials(account):
     function that check if a credential exists with that account name
     """
     return Credentials.credentials_exist(account)
+
+def generate_password(self):
+    """
+    function that generates a password for the user
+    """
+    auto_password = Credentials.generate_password(self)
+    return auto_password
