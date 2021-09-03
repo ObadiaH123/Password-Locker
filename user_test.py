@@ -27,3 +27,15 @@ class TestUser(unittest.TestCase):
         """
         self.new_user.save_user()
         self.assertEqual(len(User.user_list),1)
+
+class TestCredentials(unittest.TestCase):
+    """
+    A test class that defines a test cases for class Credentials
+    """
+    def setUp(self):
+        """
+        a method that run before each individual test cases runs
+        """
+        self.new_credentials = Credentials("Kiprotich","obadiah@123","123bett")
+
+    def tearDown(self):
