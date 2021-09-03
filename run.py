@@ -58,7 +58,44 @@ def check_credentials(account):
 
 def generate_password(self):
     """
-    function that generates a password for the user
+    function that generates a password for the user randomly
     """
     auto_password = Credentials.generate_password(self)
     return auto_password
+
+def main():
+    print("Welcome User to password locker.\n To continue enter any of the following short initials\n cna --- Create new Account \n ah --- Already have an Account \n ")
+    short_code = input("").lower().strip()
+    if short_code == "cna":
+        print("Sign Up")
+        print('*' * 50)
+        print("Username")
+        username = input()
+        print("password")
+        password = ""
+        while True:
+            print("OP - Use your own password?\n RP - Generate a random password")
+            pass_choice = input().lower().strip()
+            if pass_choice == "op":
+                print("\n")
+                password = input("Enter your password: \n")
+                break
+            elif pass_choice == "rp":
+                password = generate_password(password)
+                break
+            else:
+                print("Invalid input")
+        save_user(create_new_user(username,password))
+        print("*"*60)
+        print(f"New Account Created for: {username}, Successfully and your password is: {password}")
+        print("*"*60)
+    elif short_code == "ah":
+        print("*"*50)
+        print("Enter your username and password to log in: ")
+        print("*"*40)
+        username = input("User name: \n")
+        password = input("Password: \n")
+        login = login_user(username,password)
+        if login_user == login:
+            print(f"Hello {username} Welcome to my Password-Locker" )
+            print("\n")
