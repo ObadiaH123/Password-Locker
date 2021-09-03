@@ -17,4 +17,10 @@ def display_user(user):
     function that display the user
     """
     return User.display_user()
-    
+
+def login_user(username,password):
+    """
+    function that log in user
+    """
+    checked_user = Credentials.verify_user(username,password)
+    return checked_user
