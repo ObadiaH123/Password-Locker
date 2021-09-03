@@ -58,7 +58,54 @@ class TestCredentials(unittest.TestCase):
         self.new_credentials.save_user_credentials()
         self.assertEqual(len(Credentials.credentials_list),1)
 
-    
+    def test_save_many_account(self):
+        """
+        test to check if we can save multiple credentials objects to our credentials list
+        """
+        self.new_credentials.save_user_credentials()
+        test_credential = Credentials("Taphe","Taphees","taphe123")
+        test_credential.save_user_credentials()
+        self.assertEqual(len(Credentials.credentials_list),2)
+
+    def test_find_credential(self):
+        """
+        test to check if we can find a credential entry by account name and display the details of the credential
+        """
+        
+        self.new_credentials.save_user_credentials()
+        test_credentials = Credentials('Marrie','Marrien','Marrien340')
+        test_credentials.save_user_credentials()
+
+        the_credential = Credentials.find_by_number("Marrie")
+        self.assertEqual(the_credential.account,test_credentials.account)
+
+    def test_creditial_exist(self):
+        """
+        test to check if we can return a true or false based on whether we find or can't find the credential.
+        """
+        self.new_credentials.save_user_credentials()
+        test_credentials = Credentials('Marrie','Marrien','Marrien340')
+        test_credentials.save_user_credentials()
+        
+        found_credential = Credentials.credentials_exist("Marrie")
+        self.assertTrue(found_credential)
+
+    def test_delete_credential(self):
+        """
+        test method to test if we can remove an account credentials from our credentials_list
+        """
+        self.new_credentials.save_user_credentials()
+        test_credentials = Credentials('Marrie','Marrien','Marrien340')
+        test_credentials.save_user_credentials()
+        
+        
+        self.new_credentials.delete_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
+
+if __name__ == '__main__':
+    unittest.main()
+
+        
 
     
 
