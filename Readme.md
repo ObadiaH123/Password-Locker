@@ -1,6 +1,9 @@
 # {My Password-Locker Application}
+
 #### {This is a Python Application used to store users online account credentials like account user names, email and passwords. }, {Version 2.0}
+
 #### By **{Kiprotich Bett Bernard}**
+
 ## Description
 {This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
 
@@ -25,11 +28,18 @@ The following is the github link to the project "Password_Locker":https://github
 This site lacks github pages:
  
 ## Known Bugs
-{The UI is 40% user friendly. }
+The UI is 40% user friendly.
+
 ## Technologies Used
-{Python3.8}
-## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+Python3.8
+
+## Author's Details.
+Name: *Kiprotich Bett Benard.*
+
+Email: *kiprotichbernard780@gmail.com*
+
+Tel:*+254702637380.*
+
 ###### LICENSE AND COPY RIGHT INFO.
 MIT License
 
