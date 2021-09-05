@@ -3,12 +3,14 @@
 #### By **{Kiprotich Bett Bernard}**
 ## Description
 {This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
-## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
+
+#### Project-Setup Instructions.
+
+1.Open your github account and search for github username: **ObadiaH123**
+
+2.In ObadiaH123's repositories; git clone Password_Locker repository into your local repository using the following link: https://github.com/ObadiaH123/Password-Locker.git
+
+3.Open your terminal and run the command ./run.py and use the short codes illustrated to operate....
 {Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
 ## Known Bugs
 {Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
