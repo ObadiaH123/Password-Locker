@@ -40,7 +40,7 @@ Email: *kiprotichbernard780@gmail.com*
 
 Tel:*+254702637380.*
 
-###### LICENSE AND COPY RIGHT INFO.
+## LICENSE AND COPY RIGHT INFO.
 MIT License
 
 Copyright (c) 2021 ***Kiprotich Bett Benard***
