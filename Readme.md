@@ -11,7 +11,19 @@
 2.In ObadiaH123's repositories; git clone Password_Locker repository into your local repository using the following link: https://github.com/ObadiaH123/Password-Locker.git
 
 3.Open your terminal and run the command ./run.py and use the short codes illustrated to operate....
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+
+***BDD***
+
+| Behaviour | Input | Output |
+| --------- | ------| ------ |
+|Open your terminal|Type this command in the terminal **./run.py** and press  `enter`|The terminal displays a statement|
+|Input data to answer the query asked   |Press enter key |Some short commands appear
+|Redirects the user on some instructions on how to manouvre through the application| Type any of the short commands of your choice | Follow them through to create an **account** for instance|
+
+##### Github-link to Password_Locker Application.
+The following is the github link to the project "Password_Locker":https://github.com/ObadiaH123/Password-Locker
+This site lacks github pages:
+ 
 ## Known Bugs
 {Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
 ## Technologies Used
